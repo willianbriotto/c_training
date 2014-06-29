@@ -23,9 +23,9 @@ int main()
     do {
         disp_matrix();
         get_player_move();
-        done = check(); //Verify if exists a award
+        done = check(); //Verify if exists a winner
         if(done != ' ')
-            break;//Yes, exists a award
+            break;//Yes, exists a winner
         get_computer_move();
         done = check();
     } while(done == ' ');
@@ -81,7 +81,6 @@ void get_computer_move(void)
             break;
     }
 
-    //Should that your drawing?
     if(i * j == 9) {
         printf("Vocês empataram!\n");        
         exit(0);
@@ -103,7 +102,7 @@ void disp_matrix(void)
     printf("\n");
 }
 
-//Verify if exists a award
+//Verify if exists a winner
 char check(void)
 {
     int i;
