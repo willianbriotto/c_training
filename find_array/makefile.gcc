@@ -1,0 +1,8 @@
+CC=gcc
+CFLAGS=-g -Wall 
+
+base: find_array.c
+	$(CC) $(CFLAGS) -o find_array find_array.c
+
+clean:
+	rm -f find_array
