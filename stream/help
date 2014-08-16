@@ -1,0 +1,14 @@
+fopen() Abre um arquivo
+fclose() Fecha um arquivo
+putc() Escreve um caractere em um arquivo
+fputc() O mesmo que putc()
+getc() Lê um caractere do arquivo
+fgetc() O mesmo que getc()
+fseek() Posiciona o arquivo em um byte específico
+fprintf() É para um arquivo o que printf() é para o console
+fscanf() É para um arquivo o que scanf() é para o console
+feof() Devolve verdadeiro se o fim do arquivo for atingido
+ferror() Devolve verdadeiro se ocorreu erro
+rewind() Recoloca o indicador de posição de arquivo no início di arquivo
+remove() Apaga um arquivo
+fflush() Descarrega um arquivo
