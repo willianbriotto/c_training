@@ -12,3 +12,20 @@ ferror() Devolve verdadeiro se ocorreu erro
 rewind() Recoloca o indicador de posição de arquivo no início di arquivo
 remove() Apaga um arquivo
 fflush() Descarrega um arquivo
+
+File *fopen(cons *char nomearq, const *char modo);
+
+Onde nomearq, é o nome do arquivo. modo, indica a forma que o arquivo será aberto -- somente leitura, leitura e escrita e etc...Os valores aceitos são os seguintes:
+
+r     -    Abre um arquivo-texto para leitura
+w     -    Cria um arquivo-texto para escrita
+a     -    Anexa a um arquivo
+rb    -    Abre um arquivo binário para leitura
+wb    -    Cria um arquivo binário para escrita
+ab    -    Anexa a um arquivo binário
+r+    -    Abre um arquivo-texto para leitura/escrita
+w+    -    Cria um arquivo-text para leitura/escrita
+a+    -    Anexa ou cria um arquivo-texto para leitura/escrita
+r+b   -    Abre um arquivo binário para leitura/escrita
+w+b   -    Cria um arquivo binário para leitura/escrita
+a+b   -    Anexa a um arquivo binário para leitura/escrita
