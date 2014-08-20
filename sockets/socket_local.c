@@ -23,7 +23,6 @@ int main(int argc, char *argv[])
     if(bind(sfd, (struct sockaddr *) &my_addr, sizeof(my_addr.sun_path)) == -1)
         printf("Bind error\n");
 
-    //List errors
     if(listen(sfd, 50) == -1)
         printf("Error! Bad...\n");
 
